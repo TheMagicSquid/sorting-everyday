@@ -12,3 +12,6 @@ Almost ran out of time so the simplest sorting algorithm I could think of. I spe
 
 ### 4th of April
 Wacky. Puts them into a recursed dictonary. Very Silly
+
+### 5th of April
+A quick one today. This feels like it should be called merge sort but I feel like merge sort is very different
