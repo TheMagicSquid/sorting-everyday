@@ -28,7 +28,7 @@ This one was so close to actually being good however the averages use selection 
 ### 9th of April
 I think this one is actually a valid algorithm. My implementation may be slow but the idea is there. Proud of myself
 
-### 9th of April
+### 10th of April
 Sort by the digits. Lots of fun
 
 ### 11th of April
