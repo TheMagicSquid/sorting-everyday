@@ -27,3 +27,9 @@ This one was so close to actually being good however the averages use selection 
 
 ### 9th of April
 I think this one is actually a valid algorithm. My implementation may be slow but the idea is there. Proud of myself
+
+### 9th of April
+Sort by the digits. Lots of fun
+
+### 11th of April
+I was thinking a lot about divide and conquer catergory and so I wanted to make something using the similar technique of searching and inserting as yesterday
