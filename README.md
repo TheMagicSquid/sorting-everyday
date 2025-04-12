@@ -33,3 +33,6 @@ Sort by the digits. Lots of fun
 
 ### 11th of April
 I was thinking a lot about divide and conquer catergory and so I wanted to make something using the similar technique of searching and inserting as yesterday
+
+### 12th of April
+Wow that was easy
