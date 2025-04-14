@@ -69,7 +69,7 @@ def gort_sort(array):
 
 
 
-random_nums = random_numbers(20, 20)
+random_nums = random_numbers(200, 200)
 print("Unsorted Array")
 print(random_nums)
 print("\nSorted Array")
