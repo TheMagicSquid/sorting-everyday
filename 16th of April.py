@@ -21,9 +21,12 @@ def add_to_tree(tree, value):
     return tree
 
 def untree(tree):
-    array = untree(tree['l'])
+    array = []
+    if tree['l'] != None:
+        array.extend(untree(tree['l']))
     array.append(tree['d'])
-    array.extend(tree['r'])
+    if tree['r'] != None:
+        array.extend(untree(tree['r']))
     return array
 
 def create_tree(array):
@@ -34,12 +37,11 @@ def create_tree(array):
 
 def gort_sort(array):
     tree = create_tree(array)
-    print(print_tree(tree))
     array = untree(tree)
     return array
 
 
-random_nums = random_numbers(20, 20)
+random_nums = random_numbers(200, 200)
 print("Unsorted Array")
 print(random_nums)
 print("\nSorted Array")
