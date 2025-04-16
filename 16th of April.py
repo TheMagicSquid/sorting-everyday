@@ -20,13 +20,11 @@ def add_to_tree(tree, value):
             tree['r'] = {'d':value, 'l':None, 'r':None}
     return tree
 
-def print_tree(tree, level=0):
-    #Tanks chatgpt ;)
-    if tree is not None:
-        print_tree(tree['r'], level + 1)
-        print('    ' * level + str(tree['d']))
-        print_tree(tree['l'], level + 1)
-
+def untree(tree):
+    array = untree(tree['l'])
+    array.append(tree['d'])
+    array.extend(tree['r'])
+    return array
 
 def create_tree(array):
     tree = {'d':array[0], 'l':None, 'r':None}
@@ -37,9 +35,8 @@ def create_tree(array):
 def gort_sort(array):
     tree = create_tree(array)
     print(print_tree(tree))
-    #array = untree(tree)
+    array = untree(tree)
     return array
-
 
 
 random_nums = random_numbers(20, 20)
