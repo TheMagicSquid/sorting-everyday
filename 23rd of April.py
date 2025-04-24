@@ -7,30 +7,34 @@ def random_numbers(amount, maxs):
         number_list.append(random.randint(0,maxs))
     return number_list
 
+def is_sorted(array):
+    for i in range(len(array)-1):
+        if array[i] > array[i+1]:
+            return False
+    return True
+
 def find_spot(array, index):
 	for i in range(len(array)-1):
-			if i == index:
-				continue
-			if array[i] < array[index] and array[index] < array[i+1]:
-				return i+1
+		if array[i] <= array[index] and array[index] < array[i+1]:
+			return i+1
 	if array[index] < array[0]:
 		return 0
 	return len(array)
 
 def gort_sort(array):
 	notsorted = True
-	while notsorted
-		notsorted = False
-    for i in range(len(array)):
+	while notsorted:
+		for i in range(len(array)):
 			index = find_spot(array, i)
-			array.insert(index, array[i])
-			if not i == index:
+			if not i == index-1:
 				notsorted = True
+			array.insert(index, array[i])
 			if i > index:
 				array.pop(i+1)
 			else:
 				array.pop(i)
-    
+		notsorted = not is_sorted(array)
+	return array
 
 random_nums = random_numbers(200, 200)
 print("Unsorted Array")
